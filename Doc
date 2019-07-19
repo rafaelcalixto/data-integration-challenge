@@ -1,0 +1,32 @@
+######################  Welcome to the Golang API Project ######################
+
+To run this project you just need to clone this repository and move the
+directories stating with "neoway" to the src directory in the GOPATH.
+
+Then, the project is separated by tasks, so follow the below steps to run all
+the tools of the Project.
+
+### Task 1:
+ - Open the directory first_task and run the below command:
+    go run main.go
+
+### Task 2:
+ - Open the directory second_task and run the below commands in this order:
+    go run api.go
+    go run main.go
+
+### Task 3:
+ - Open the directory extra_task and run the below command:
+    go run api.go
+
+ - Then, follow the below steps
+     - Open your favorite browser or user the command curl on the shell
+     - Type the following URL:
+         http://localhost/api/companies?c="Parameter1"&z="Parameter2"
+         Where the parameters are:
+             Parameter1: Company name
+             Parameter2: Zip code
+     - The API will return a JSON with the keys id, name, zip and website if
+     some result was matched with the parameters. If no results has matched
+     the API will return a JSON with the key msn and the message
+     "No match results"

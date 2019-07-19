@@ -10,8 +10,8 @@ import (
 
 // This is a simple package used just to call the API
 func main() {
-    fmt.Println("starting the API...")
+    fmt.Println("starting API...")
     http.HandleFunc("/", api.Index_handler)
-    http.HandleFunc("/api/clientdata", api.AssociateLink)
-    http.ListenAndServe(":8000", nil)
+    http.HandleFunc("/api/companies", api.ConsultCompanies)
+    http.ListenAndServe(":8080", nil)
 }
